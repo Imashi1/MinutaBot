@@ -3,6 +3,8 @@ import requests
 import os, os.path, csv
 import re
 from archFilter import *
+from datetime import datetime
+
 
 '''
 def cleanhtml(raw_html):
@@ -11,34 +13,63 @@ def cleanhtml(raw_html):
     return cleantext
 '''
 
-#Url de donde se consiguio la data 
-listingurl="https://www.usm.cl/comunidad/servicio-de-alimentacion/"
+def actualizarArchivos():
+	status = open("status.txt")
+	day = status.readlines()[0]
+	status.close()
 
-#Procesamiento del archivo html
-response = requests.get(listingurl)
-soup = BeautifulSoup(response.text, "html.parser")
-table = soup.find_all("table")[0]
-row_marker = 0
+	#Obtencion del dia actual
+	date = str(datetime.now())
+	fecha,_ = date.split()
+	anio, mes, dia = map(int,fecha.split('-'))
 
-#Creacion de archivo donde cada ! es una fila y cada - es una columna
-Data = open('Almuerzos.txt', 'w')
-for row in table.find_all('tr'):
-	column_marker = 0
-	columns = row.find_all('td')
-	Data.write("!\n")
-	for column in columns:
-		Data.write(column.get_text() + "\n")
-		column_marker += 1
-		Data.write("-\n")
-	row_marker += 1
+	#if int(day) != dia:
+	if int(day) != dia:
+		#Url de donde se consiguio la data 
+		listingurl="https://www.usm.cl/comunidad/servicio-de-alimentacion/"
 
-Data.close()
+		#Procesamiento del archivo html
+		response = requests.get(listingurl)
+		soup = BeautifulSoup(response.text, "html.parser")
+		table = soup.find_all("table")[0]
+		row_marker = 0
 
-#Obtencion del diccionario de almuerzos
-diccionario = getData()
+		#Creacion de archivo donde cada ! es una fila y cada - es una columna
+		Data = open('Almuerzos.txt', 'w')
+		for row in table.find_all('tr'):
+			column_marker = 0
+			columns = row.find_all('td')
+			Data.write("!\n")
+			for column in columns:
+				Data.write(column.get_text() + "\n")
+				column_marker += 1
+				Data.write("-\n")
+			row_marker += 1
 
+		Data.close()
 
+		#Obtencion del diccionario de almuerzos
+		diccionario = getData()
+		day, index = getCurrentDayAndIndex(diccionario, dia)
+		infoDelDia = open('info.txt', 'w')
+		status = open('status.txt', 'w')
+		if day == 'nah':
+			status.write(str(dia))
+			infoDelDia.write('No hay informacion disponible para hoy.\n')
+		else:
+			infoDelDia.write(day+"\n\n")
+			status.write(str(dia))
+			del diccionario[0]
+			for _,values in diccionario.items():
+				infoDelDia.write(values[0][0] + "\n")
+				for dato in values[index]:
+					infoDelDia.write(dato + "\n")
+				infoDelDia.write("\n")
 
+		infoDelDia.close()
+		status.close()
+
+actualizarArchivos()
 '''
 Data = open('Data.txt','w')
 for rows in soup.find_all("table"):
