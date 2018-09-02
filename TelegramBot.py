@@ -15,10 +15,15 @@ def minuta(bot,update, pass_chat_data=True):
 	info.close()
 	bot.sendMessage(chat_id=update.message.chat_id, text=minuta)
 
-start_handler = CommandHandler('minuta',minuta)
+def start(bot, update):
+	bot.send_message(chat_id=update.message.chat_id, text="Te da lata ir a revisar los almuerzos por la pagina o presencialmente, yo te puedo ayudar!. Solo escribe /minuta\n\n Creadores: Fabián Bugueño / Kevin Lagos\n\n Puedes checkear el repositorio de github en github.com/Imashi1/MinutaBot")
+
+minuta_handler = CommandHandler('minuta',minuta)
+start_handler = CommandHandler('start',start)
 dispatcher = mi_bot_updater.dispatcher
 
 dispatcher.add_handler(start_handler)
+dispatcher.add_handler(minuta_handler)
 
 mi_bot_updater.start_polling()
 mi_bot_updater.idle()
