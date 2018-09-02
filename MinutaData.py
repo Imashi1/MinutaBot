@@ -2,8 +2,6 @@ from bs4 import BeautifulSoup
 import requests
 import os, os.path, csv
 import re
-import pandas as pd
-import numpy as np
 import archFilter
 
 def cleanhtml(raw_html):
@@ -18,15 +16,6 @@ listingurl="https://www.usm.cl/comunidad/servicio-de-alimentacion/"
 response = requests.get(listingurl)
 soup = BeautifulSoup(response.text, "html.parser")
 table = soup.find_all("table")[0]
-new_table = pd.DataFrame(columns=range(0,6), index = [])
-df = pd.DataFrame([['a', 'b', 'c', 'd', 'e'],
-                   ['a', 'b', 'c', 'd', 'e'],
-                   ['a', 'b', 'c', 'd', 'e'],
-                   ['a', 'b', 'c', 'd', 'e'],
-                   ['a', 'b', 'c', 'd', 'e'],
-                   ['a', 'b', 'c', 'd', 'e'],
-                   ['a', 'b', 'c', 'd', 'e']], columns=[0,1,2,3,4])
-
 row_marker = 0
 
 Data = open('Almuerzos.txt', 'w')
@@ -36,7 +25,6 @@ for row in table.find_all('tr'):
 	Data.write("!\n")
 	for column in columns:
 		Data.write(column.get_text() + "\n")
-		df[row_marker][column_marker] = column.get_text()
 		column_marker += 1
 		Data.write("-\n")
 	row_marker += 1
