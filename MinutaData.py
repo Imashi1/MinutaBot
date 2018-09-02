@@ -2,22 +2,25 @@ from bs4 import BeautifulSoup
 import requests
 import os, os.path, csv
 import re
-import archFilter
+from archFilter import *
 
+'''
 def cleanhtml(raw_html):
     cleanr = re.compile('<.*?>')
     cleantext = re.sub(cleanr, '', str(raw_html))
     return cleantext
+'''
 
-Almuerzo=[]
-
+#Url de donde se consiguio la data 
 listingurl="https://www.usm.cl/comunidad/servicio-de-alimentacion/"
 
+#Procesamiento del archivo html
 response = requests.get(listingurl)
 soup = BeautifulSoup(response.text, "html.parser")
 table = soup.find_all("table")[0]
 row_marker = 0
 
+#Creacion de archivo donde cada ! es una fila y cada - es una columna
 Data = open('Almuerzos.txt', 'w')
 for row in table.find_all('tr'):
 	column_marker = 0
@@ -30,6 +33,10 @@ for row in table.find_all('tr'):
 	row_marker += 1
 
 Data.close()
+
+#Obtencion del diccionario de almuerzos
+diccionario = getData()
+
 
 
 '''
