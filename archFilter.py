@@ -26,7 +26,7 @@ def getCurrentDayAndIndex(dicc, day):
 	for value in dicc[0]:
 		if value != []:
 			_, numero = value[0].split()
-			if str(day) == numero:
+			if int(day) == int(numero):
 				index = dicc[0].index(value)
 				dia = value[0]
 				break
