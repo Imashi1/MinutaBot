@@ -4,7 +4,7 @@ def getData():
     for i in range(0,6):
         dicc[i] = [[], [], [], [], [], [],[]]#->solucion 9/10/2018
     arch = open("Almuerzos.txt")
-    row = -1
+    row = 0
     column = -1
     for linea in arch:
         if "!" in linea:
