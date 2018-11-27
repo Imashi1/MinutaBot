@@ -22,9 +22,8 @@ def actualizarArchivos():
 	date = str(datetime.now())
 	fecha,_ = date.split()
 	anio, mes, dia = map(int,fecha.split('-'))
-
 	#if int(day) != dia:
-	if int(day) != dia:
+	if True:
 		#Url de donde se consiguio la data 
 		listingurl="https://www.usm.cl/comunidad/servicio-de-alimentacion/"
 
@@ -60,6 +59,8 @@ def actualizarArchivos():
 			infoDelDia.write(day+"\n\n")
 			status.write(str(dia))
 			del diccionario[0]
+			del diccionario[1]
+			#print(diccionario, index)
 			for _,values in diccionario.items():
 				infoDelDia.write(values[0][0] + "\n")
 				for dato in values[index]:

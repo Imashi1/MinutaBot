@@ -28,11 +28,11 @@ def getData():
 def getCurrentDayAndIndex(dicc, day):
     index = 0
     dia = 'nah'
-    for value in dicc[0]:
+    for value in dicc[1]:
         if value != []:
             _, numero = value[0].split()
             if int(day) == int(numero):
-                index = dicc[0].index(value)
+                index = dicc[1].index(value)
                 dia = value[0]
                 break
     return dia, index
