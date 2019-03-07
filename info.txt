@@ -1,34 +1,18 @@
-<<<<<<< HEAD
 MiÃ©rcoles 06
-=======
-Miércoles 06
->>>>>>> 29c501469f6db20c832878f599fc27855606ffc3
 
 Almuerzos
 Sopa de Pollo con fideos.
 1. Ens. Habas con salsa verde.
-<<<<<<< HEAD
 2. Ens. Mix de hojas verdes sÃ¨samo.
 Fondo A: Pescado Margarita.
 Fondo B: Chapsui de cerdo.
 Acomp.A: GratÃ¬n de papas.
 Acomp.B: Arroz ChaufÃ n.
-=======
-2. Ens. Mix de hojas verdes sèsamo.
-Fondo A: Pescado Margarita.
-Fondo B: Chapsui de cerdo.
-Acomp.A: Gratìn de papas.
-Acomp.B: Arroz Chaufàn.
->>>>>>> 29c501469f6db20c832878f599fc27855606ffc3
 Postre.
 HASTA AGOTAR STOCK.
 
 Dietas
-<<<<<<< HEAD
 ConsomÃ¨ de ave.
-=======
-Consomè de ave.
->>>>>>> 29c501469f6db20c832878f599fc27855606ffc3
 Pavo a la plancha con Flan de acelga.
 Compota de manzana.
 

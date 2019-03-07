@@ -1,5 +1,5 @@
 !
- 
+Â 
 -
 Lunes 04
 -
@@ -46,17 +46,6 @@ HASTA AGOTAR STOCK.
 -
 Crema de ChampiÃ±Ã²n.
 1. Ens. Tomate, rÃ¹cula.
-2. Ens. Mix de hojas verdes sèsamo.
-Fondo A: Pescado Margarita.
-Fondo B: Chapsui de cerdo.
-Acomp.A: Gratìn de papas.
-Acomp.B: Arroz Chaufàn.
-Postre.
-HASTA AGOTAR STOCK.
--
-Crema de Champiñòn.
-1. Ens. Tomate, rùcula.
->>>>>>> 29c501469f6db20c832878f599fc27855606ffc3
 2. Ens. Apio, zanahoria, perejil.
 Fondo A: Lentejas guisadas con Chorizo.
 Fondo B: Pechuga de pollo rebozada  con Verduras Chinas.
@@ -65,21 +54,12 @@ HASTA AGOTAR STOCK.
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 -
-<<<<<<< HEAD
 Crema de EspÃ rragos.
 1. Ens. Lechuga, cebolla, tomates.
 2. Ens. Repollo, pimentÃ²n.
 Fondo A: Pollo a la mostaza.
 Fondo B: Carne a la cacerola.
 Acomp. A: Papas rÃºsticas con mantequilla y eneldo.
-=======
-Crema de Espàrragos.
-1. Ens. Lechuga, cebolla, tomates.
-2. Ens. Repollo, pimentòn.
-Fondo A: Pollo a la mostaza.
-Fondo B: Carne a la cacerola.
-Acomp. A: Papas rústicas con mantequilla y eneldo.
->>>>>>> 29c501469f6db20c832878f599fc27855606ffc3
 Acomp. B: Fideos al cilantro.
 Postre.
 HASTA AGOTAR STOCK.
@@ -88,7 +68,6 @@ HASTA AGOTAR STOCK.
 Dietas
 -
 Crema de zapallo.
-<<<<<<< HEAD
 Pollo al jugo  con PurÃ¨.
 Yogurt light.
 -
@@ -106,25 +85,6 @@ Leche nevada.
 -
 Crema de verduras.
 LasaÃ±a de verduras.
-=======
-Pollo al jugo  con Purè.
-Yogurt light.
--
-Ens. P. verdes, zanahoria, espàrragos.
-Carne al jugo con Budìn bicolor.
-Jalea con fruta.
--
-Consomè de ave.
-Pavo a la plancha con Flan de acelga.
-Compota de manzana.
--
-Ens. Acelga, betarraga, apio.
-Pescado al jugo con Arroz.
-Leche nevada.
--
-Crema de verduras.
-Lasaña de verduras.
->>>>>>> 29c501469f6db20c832878f599fc27855606ffc3
 Compota de durazno.
 -
 !
@@ -136,11 +96,7 @@ Postre.
 
 -
 Betarraga, quinoa, ensalada.
-<<<<<<< HEAD
 TomaticÃ n soya con Arroz perla.
-=======
-Tomaticàn soya con Arroz perla.
->>>>>>> 29c501469f6db20c832878f599fc27855606ffc3
 Postre.
 -
 Quesillo, ensalada.
@@ -157,11 +113,7 @@ HASTA AGOTAR STOCK.
 
 -
 Ensalada surtida.
-<<<<<<< HEAD
 LasaÃ±a de soya.
-=======
-Lasaña de soya.
->>>>>>> 29c501469f6db20c832878f599fc27855606ffc3
 Postre.
 -
 !
